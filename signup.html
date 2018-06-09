@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rate A Genie</title>
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3.0, user-scalable=yes"/>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/global.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div id="rag-site-nav">
+      <header style="z-index: 100;">
+          <div id="fixed_navbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+              <div class="container fix-navbar-margins">
+                  <div class="logo-container"><a class="logo" href="/"></a></div>
+                  <div class="menu-container hidden-xs dynamic-on-scroll">
+                      <ul id="menu-large-links" class="nav nav-pills pull-right">
+                          <li><a class="dynamic-on-scroll-on" href="#">Help</a></li>
+                          <li><a class="dynamic-on-scroll-on" href="#">Contact Us</a></li>
+                          <li><a class="dynamic-on-scroll-on" href="signup.html">Sign up</a></li>
+                      </ul>
+
+                      <a href="signup.html"><span style="display: initial; margin-top: 14px; position: absolute; right: 16vw;" dir="ltr" class="cta-click-button btn btn-circle rag-button-primary uk-align-right nav-black-cta show-on-scroll pull-right">Get started, It's FREE!</span></a>
+                  </div>
+                  <a href="signup.html"><span style="display: initial; margin-top: 14px; position: absolute; right: 18vw; font-size: 12px;" dir="ltr" class="hidden-sm hidden-md hidden-lg cta-click-button btn btn-circle rag-button-primary uk-align-right nav-black-cta show-on-scroll pull-right">Get started, It's FREE!</span></a>
+                  <button id="burger" data-toggle="collapse" data-target="#menu" class="hidden-sm hidden-md hidden-lg btn btn-primary navbar-btn pull-right"><span class="fa fa-bars"></span></button>
+              </div>
+          </div>
+          <!-- Menu-->
+          <div id="menu" class="panel panel-default panel-collapse collapse">
+              <div class="container">
+                  <ul id="menu-links" class="nav nav-pills nav-stacked">
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="signup.html">Sign up</a></li>
+                  </ul>
+              </div>
+          </div>
+      </header>
+  </div>
+  <div id="change_navbar"></div>
+  <main>
+      <section class="sign-up">
+          <div class="container">
+              <div class="row">
+
+                  <div class="forms-wrap">
+
+                      <div class="head-text text-center">
+                          Become a Genie
+                      </div>
+                      <div class="text-center mb20">Please fill in the fields below to register.</div>
+
+                      <form method="POST" action="#">
+                          <div class="form-group">
+                              <label for="first_name" title="Required field">First Name <span class="mandatory">*</span></label>
+                              <input class="form-control" id="first_name" name="first_name" value="" placeholder="First name" type="text">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="last_name" title="Required field">Last Name <span class="mandatory">*</span></label>
+                              <input class="form-control" id="last_name" name="last_name" value="" placeholder="Last Name" type="text">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="contact_form_email" title="Required field">E-mail <span class="mandatory">*</span></label>
+                              <input class="form-control" type="text" placeholder="E-mail" name="contact_form_email" id="contact_form_email" required="required">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="contact_form_phone">Contact Number</label>
+                              <input class="form-control form_phone" type="text" placeholder="Contact Number" name="contact_form_phone" id="contact_form_phone">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+
+                          <div class="form-group" title="Required field">
+                              <label for="password">Password <span class="mandatory">*</span></label>
+                              <input class="form-control" name="password" id="password" value="" maxlength="50" type="password" placeholder="Password" required="required">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+                          <div class="form-group" title="Required field">
+                              <label for="confirm_password">Confirm the password <span class="mandatory">*</span></label>
+                              <input class="form-control" name="confirm_password" id="confirm_password" value="" maxlength="50" type="password" placeholder="Confirm the password" required="required">
+                              <p class="error">Please enter correct information</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="signup_form_skills">Skills</label>
+                              <select id="signup_form_skills" name="signup_form_skills" class="form-control">
+                                  <option value="0">Desktop Computers</option>
+                                  <option value="1">Laptops</option>
+                                  <option value="2">Mobiles / Tablets</option>
+                                  <option value="3">TVs / Monitors</option>
+                                  <option value="4">Other...</option>
+                              </select>
+                              <p class="error">Please enter correct information</p>
+
+                          </div>
+                          <div class="form-group form-btn">
+
+                              <button class="btn btn-register btn-block">Sign up</button>
+
+                          </div>
+                          <div class="form-mes"></div>
+
+                      </form>
+
+                      <!-- register-form -->
+                  </div>
+                  <!-- register-wrap -->
+              </div>
+          </div>
+          <!-- container -->
+      </section>
+
+
+      <section id="section-footer" class="rag-section">
+          <div class="rag-container-center-footer">
+              <div class="footer-body-container">
+                  <div class="footer-copywrite-container">
+                      <div class="privacy-links-container">
+                          <a href="./privacy/" class="privacy-link">Privacy Policy</a>
+                          <a href="./admin_terms/" class="privacy-link">Terms of Use</a>
+                          <h5 class="copyright">Copyright © 2018 Rate A Genie. All Rights Reserved</h5>
+                      </div>
+                  </div>
+                  <div class="footer-social-container text-center">
+                      <div class="rag-social-container">
+                          <a href="#"><div class="rag-social-icon icon-social-mail"></div></a>
+                          <a href="#" target="_blank"><div class="rag-social-icon icon-social-fb"></div></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-disclaimer"></div>
+              <div class="spacer-fixed-cta visible-sm-block"></div>
+          </div>
+      </section>
+      <section id="section-cta" class="rag-section visible-sm-block">
+          <div dir="ltr" class="rag-container-center text-center">
+              <a class="cta-click-button btn rag-cta-button-primary section-fixed-cta">Get started, It's FREE!</a>
+          </div>
+      </section>
+
+  </main>
+
+  <!------------------------------------------------------------------------------>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
